@@ -29,7 +29,7 @@ def backup_database():
                 shutil.copy(file_path, backup_path)
         
         # Gửi email thông báo thành công
-        send_email("Backup thành công", "Backup các file cơ sở dữ liệu đã thành công.")
+        send_email("Backup thành công", )
     except Exception as e:
         # Gửi email thông báo thất bại
         send_email("Backup thất bại", f"Có lỗi xảy ra: {e}")
